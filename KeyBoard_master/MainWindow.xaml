@@ -1,0 +1,93 @@
+﻿<Window x:Class="KeyBoard_master.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeyBoard_master"
+        mc:Ignorable="d"
+        KeyDown="KeyBoard_KeyDown"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Height="30" Margin="0,0,0,380" Orientation="Horizontal">
+            <Label Width="60" Margin="80,0,0,0" Content="Speed:" FontSize="14"/>
+            <TextBlock Name="TextSpeed" Width="60"/>
+            <Label Width="80" Margin="5,0,0,0" Content="Sumb/sek" FontSize="14"/>
+            <Label Width="50" Margin="5,0,0,0" Content="Fails:" FontSize="14"/>
+            <TextBlock Name="TextFails" Width="60"/>
+        </StackPanel>
+        <TextBlock Height="20" Margin="0,0,0,340" Text="I love programming, I love programming/ I love programming" FontSize="14" Padding="80,0,0,0"/>
+        <TextBlock x:Name="TextAutput" Width="595" Height="30" Margin="-40,0,0,280" Padding="10,0,0,0" Background="LightGreen"/>
+        <StackPanel Height="45" Margin="0,100,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+            <local:MyButton Text="`" Value="Oem3" BgColor="LightPink" Width="35" Margin="80,0,0,0"/>
+            <local:MyButton Text="1" Value="D1" BgColor="LightPink" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="2" Value="D2" BgColor="LightPink" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="3" Value="D3" BgColor="Yellow" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="4" Value="D4" BgColor="LightGreen" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="5" Value="D5" BgColor="LightBlue" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="6" Value="D6" BgColor="LightBlue" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="7" Value="D7" BgColor="violet" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="8" Value="D8" BgColor="violet" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="9" Value="D9" BgColor="lightpink" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="0" Value="D0" BgColor="Yellow" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="-" Value="OemMinus" BgColor="lightgreen" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="=" Value="OemPlus" BgColor="lightgreen" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="Backspace" Value="Back" BgColor="lightgray" Width="80" Margin="5,0,0,0"/>
+        </StackPanel>
+        <StackPanel Height="45" Margin="0,140,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+            <local:MyButton Text="Tab" Value="Tab" BgColor="lightgray" Width="55" Margin="80,0,0,0"/>
+            <local:MyButton Text="Q" Value="Q" BgColor="LightPink" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="W" Value="W" BgColor="yellow" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="E" Value="E" BgColor="LightGreen" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="R" Value="R" BgColor="LightBlue" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="T" Value="T" BgColor="LightBlue" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="Y" Value="Y" BgColor="violet" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="U" Value="U" BgColor="violet" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="I" Value="I" BgColor="lightpink" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="O" Value="O" BgColor="Yellow" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="P" Value="P" BgColor="LightGreen" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="[" Value="OemOpenBrackets" BgColor="lightgreen" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="]" Value="Oem6" BgColor="lightgreen" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="\" Value="Oem5" BgColor="LightGreen" Width="55" Margin="5,0,0,0"/>
+        </StackPanel>
+        <StackPanel Height="45" Margin="0,180,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+            <local:MyButton Text="Caps Lock" Value="Capital" BgColor="lightgray" Width="80" Margin="80,0,0,0"/>
+            <local:MyButton Text="A" Value="A" BgColor="LightPink" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="S" Value="S" BgColor="yellow" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="D" Value="D" BgColor="LightGreen" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="F" Value="F" BgColor="LightBlue" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="G" Value="G" BgColor="LightBlue" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="H" Value="H" BgColor="violet" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="J" Value="J" BgColor="violet" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="K" Value="K" BgColor="lightpink" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="L" Value="L" BgColor="Yellow" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text=";" Value="Oem1" BgColor="LightGreen" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="'" Value="OemQuotes" BgColor="lightgreen" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="Enter" Value="Return" BgColor="lightgray" Width="70" Margin="5,0,0,0"/>
+        </StackPanel>
+        <StackPanel Height="45" Margin="0,220,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+            <local:MyButton Text="Shift" Value="LeftShift" BgColor="lightgray" Width="95" Margin="80,0,0,0"/>
+            <local:MyButton Text="Z" Value="Z" BgColor="LightPink" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="X" Value="X" BgColor="yellow" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="C" Value="C" BgColor="LightGreen" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="V" Value="V" BgColor="LightBlue" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="B" Value="B" BgColor="LightBlue" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="N" Value="N" BgColor="violet" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="M" Value="M" BgColor="violet" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="," Value="OemComma" BgColor="lightpink" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="." Value="OemPeriod" BgColor="Yellow" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="/" Value="OemQuestion" BgColor="LightGreen" Width="35" Margin="5,0,0,0"/>
+            <local:MyButton Text="Shift" Value="RightShift" BgColor="lightgray" Width="95" Margin="5,0,0,0"/>
+        </StackPanel>
+        <StackPanel Height="45" Margin="0,260,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+            <local:MyButton Text="Ctrl" Value="LeftCtrl" BgColor="lightgray" Width="60" Margin="80,0,0,0"/>
+            <local:MyButton Text="Win" Value="LWin" BgColor="lightgray" Width="60" Margin="5,0,0,0"/>
+            <local:MyButton Text="Alt" Value="System" BgColor="lightgray" Width="60" Margin="5,0,0,0"/>
+            <local:MyButton Text="Spase" Value="Space" BgColor="orange" Width="205" Margin="5,0,0,0"/>
+            <local:MyButton Text="Alt" Value="System" BgColor="lightgray" Width="60" Margin="5,0,0,0"/>
+            <local:MyButton Text="Win" Value="Apps" BgColor="lightgray" Width="60" Margin="5,0,0,0"/>
+            <local:MyButton Text="Ctrl" Value="RightCtrl" BgColor="lightgray" Width="60" Margin="5,0,0,0"/>
+        </StackPanel>
+        <!--<TextBox x:Name="RR" Width="200" Height="20" Margin="0,250,0,0"/>-->
+
+    </Grid>
+</Window>
